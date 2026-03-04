@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "repos/logeshwaran0404/azure-cloud-backup/contents/"
+				"relativeUrl": "https://github.com/logeshwaran0404/azure-cloud-backup/DummyCSV.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
