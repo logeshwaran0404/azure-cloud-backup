@@ -2,15 +2,17 @@
 	"name": "Dummy",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureCloudGit",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "DummyCSV.csv"
+				"type": "AzureBlobStorageLocation",
+				"fileName": "DummyCSV.csv",
+				"folderPath": "gitbackupfiles",
+				"container": "gitfiles"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
