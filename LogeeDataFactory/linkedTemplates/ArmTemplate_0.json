@@ -114,8 +114,7 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation",
-						"relativeUrl": "https://github.com/logeshwaran0404/azure-cloud-backup/DummyCSV.csv"
+						"type": "HttpServerLocation"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -180,7 +179,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "Dummy",
+								"referenceName": "GitHub_Files",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -200,7 +199,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/Dummy')]",
+				"[concat(variables('factoryId'), '/datasets/GitHub_Files')]",
 				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]"
 			]
 		}
