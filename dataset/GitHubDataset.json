@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "repos/logeshwaran0404/azure-cloud-backup/contents/"
+				"relativeUrl": {
+					"value": "@concat('logeshwaran0404/azure-cloud-backup/main/', item().name)",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
