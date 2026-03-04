@@ -137,7 +137,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "DummyCSV.csv",
+						"fileName": "@item().name",
 						"folderPath": "csv-files",
 						"container": "gitfiles"
 					},
