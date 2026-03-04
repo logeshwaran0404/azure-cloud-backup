@@ -10,8 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "DummyCSV.csv",
-				"folderPath": "gitbackupfiles",
 				"container": "gitfiles"
 			},
 			"columnDelimiter": ",",
