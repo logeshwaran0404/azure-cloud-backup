@@ -1,0 +1,9 @@
+{
+	"name": "LogeeDataFactory",
+	"location": "eastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ac37f1bb-de5a-4a00-83fe-cb9a508ff9ca",
+		"tenantId": "3ac11eaf-6318-415e-88b6-d176b4253cdb"
+	}
+}
