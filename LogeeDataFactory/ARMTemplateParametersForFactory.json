@@ -9,7 +9,7 @@
 			"value": ""
 		},
 		"AzureCloudGit_properties_typeProperties_url": {
-			"value": "https://api.github.com/repos/logeshwaran0404/azure-cloud-backup/contents/"
+			"value": "https://raw.githubusercontent.com/"
 		}
 	}
 }

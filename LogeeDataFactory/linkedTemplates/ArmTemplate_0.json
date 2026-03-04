@@ -13,7 +13,7 @@
 		},
 		"AzureCloudGit_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://api.github.com/repos/logeshwaran0404/azure-cloud-backup/contents/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		}
 	},
 	"variables": {
@@ -81,14 +81,15 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "AzureCloudGit",
+					"referenceName": "AzureBlobStorage1",
 					"type": "LinkedServiceReference"
 				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation"
+						"type": "AzureBlobStorageLocation",
+						"container": "gitfiles"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -98,7 +99,7 @@
 				"schema": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureCloudGit')]"
+				"[concat(variables('factoryId'), '/linkedServices/AzureBlobStorage1')]"
 			]
 		},
 		{
@@ -114,7 +115,8 @@
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
-						"type": "HttpServerLocation"
+						"type": "HttpServerLocation",
+						"relativeUrl": "logeshwaran0404/azure-cloud-backup/main/DummyCSV.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -159,12 +161,13 @@
 							"sink": {
 								"type": "DelimitedTextSink",
 								"storeSettings": {
-									"type": "AzureBlobStorageWriteSettings"
+									"type": "AzureBlobStorageWriteSettings",
+									"copyBehavior": "FlattenHierarchy"
 								},
 								"formatSettings": {
 									"type": "DelimitedTextWriteSettings",
 									"quoteAllText": true,
-									"fileExtension": ".txt"
+									"fileExtension": ""
 								}
 							},
 							"enableStaging": false,
@@ -186,7 +189,7 @@
 						],
 						"outputs": [
 							{
-								"referenceName": "DelimitedText1",
+								"referenceName": "Dummy",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -200,7 +203,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/GitHub_Files')]",
-				"[concat(variables('factoryId'), '/datasets/DelimitedText1')]"
+				"[concat(variables('factoryId'), '/datasets/Dummy')]"
 			]
 		}
 	]

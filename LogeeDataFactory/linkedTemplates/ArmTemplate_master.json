@@ -13,7 +13,7 @@
 		},
 		"AzureCloudGit_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://api.github.com/repos/logeshwaran0404/azure-cloud-backup/contents/"
+			"defaultValue": "https://raw.githubusercontent.com/"
 		},
 		"containerUri": {
 			"type": "string",
