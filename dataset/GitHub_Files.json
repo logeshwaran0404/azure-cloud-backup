@@ -9,7 +9,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "DummyCSV.csv"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
