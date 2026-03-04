@@ -48,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Dummy",
+						"referenceName": "GitHub_Files",
 						"type": "DatasetReference"
 					}
 				],
