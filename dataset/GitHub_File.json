@@ -1,0 +1,22 @@
+{
+	"name": "GitHub_File",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHub_HTTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "/username/repo/main/data/@{item()}"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

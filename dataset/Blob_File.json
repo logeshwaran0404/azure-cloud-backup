@@ -8,15 +8,17 @@
 				"fileName": "dummufiles"
 			}
 		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@item()",
-					"type": "Expression"
-				},
+				"fileName": "@dataset().fileName",
 				"folderPath": "csv-files",
 				"container": "gitfiles"
 			},
