@@ -1,0 +1,11 @@
+{
+	"name": "TArget_BlobStorageConnection",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://gitbackup.blob.core.windows.net/githubcontainer",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
