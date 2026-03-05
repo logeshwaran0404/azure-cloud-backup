@@ -1,5 +1,5 @@
 {
-	"name": "source_gitfileDS",
+	"name": "sourceGithubRAWDS",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SourceGITHubRAW",
@@ -9,8 +9,7 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation",
-				"relativeUrl": "@concat('logeshwaran0404/azure-cloud-backup/main/CSVFiles/',item().name)"
+				"type": "HttpServerLocation"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

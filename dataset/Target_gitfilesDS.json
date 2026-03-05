@@ -1,0 +1,37 @@
+{
+	"name": "Target_gitfilesDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TArget_BlobStorageConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "@item().name",
+				"folderPath": "csv-files",
+				"container": "gitfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "2",
+				"type": "String"
+			},
+			{
+				"name": "02-Mar",
+				"type": "String"
+			},
+			{
+				"name": "Monday",
+				"type": "String"
+			}
+		]
+	}
+}
