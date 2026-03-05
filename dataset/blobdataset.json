@@ -1,0 +1,24 @@
+{
+	"name": "blobdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobStorageConnection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "@item().name",
+				"folderPath": "csv-files",
+				"container": "gitfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

@@ -102,7 +102,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "Target_gitfilesDS",
+									"referenceName": "blobdataset",
 									"type": "DatasetReference"
 								}
 							]
