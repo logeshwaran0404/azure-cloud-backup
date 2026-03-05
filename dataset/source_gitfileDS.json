@@ -2,7 +2,7 @@
 	"name": "source_gitfileDS",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "source_github",
+			"referenceName": "SourceGITHubRAW",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
