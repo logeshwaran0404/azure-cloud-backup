@@ -2,7 +2,7 @@
 	"name": "source_gitfileDS",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "SourceGITHubRAW",
+			"referenceName": "source_github",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,14 +10,11 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": {
-					"value": "@concat('logeshwaran0404/azure-cloud-backup/main/CSVFiles/',item())",
-					"type": "Expression"
-				}
+				"relativeUrl": "repos/logeshwaran0404/azure-cloud-backup/contents/CSVFiles"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
-			"firstRowAsHeader": true,
+			"firstRowAsHeader": false,
 			"quoteChar": "\""
 		},
 		"schema": []
