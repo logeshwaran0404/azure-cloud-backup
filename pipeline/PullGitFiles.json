@@ -96,7 +96,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "source_gitfileDS",
+									"referenceName": "sourceGithubRAWDS",
 									"type": "DatasetReference"
 								}
 							],
