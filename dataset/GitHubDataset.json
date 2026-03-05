@@ -2,7 +2,7 @@
 	"name": "GitHubDataset",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer1",
+			"referenceName": "SourceGITHubRAW",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,10 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": {
-					"value": "repos/logeshwaran0404/azure-cloud-backup/contents/CSVFiles",
-					"type": "Expression"
-				}
+				"relativeUrl": "@concat('logeshwaran0404/azure-cloud-backup/main/CSVFiles/',item().name)"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
