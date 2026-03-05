@@ -1,0 +1,11 @@
+{
+	"name": "GetAllDummy",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"containerUri": "https://gitbackup.blob.core.windows.net/gitfiles",
+			"authenticationType": "Anonymous"
+		}
+	}
+}
