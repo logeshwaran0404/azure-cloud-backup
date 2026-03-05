@@ -16,9 +16,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('GitData').output.value",
+						"value": "@activity('GETALLFILESFORMGIT').output.value",
 						"type": "Expression"
 					},
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "COPYALLFILES",
