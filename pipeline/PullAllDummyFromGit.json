@@ -1,0 +1,11 @@
+{
+	"name": "PullAllDummyFromGit",
+	"properties": {
+		"variables": {
+			"fileList": {
+				"type": "Array"
+			}
+		},
+		"annotations": []
+	}
+}
