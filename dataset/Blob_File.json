@@ -1,0 +1,43 @@
+{
+	"name": "Blob_File",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GetDummyFilesfromGit",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"fileName": "dummufiles"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@item()",
+					"type": "Expression"
+				},
+				"folderPath": "csv-files",
+				"container": "gitfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "2",
+				"type": "String"
+			},
+			{
+				"name": "02-Mar",
+				"type": "String"
+			},
+			{
+				"name": "Monday",
+				"type": "String"
+			}
+		]
+	}
+}
