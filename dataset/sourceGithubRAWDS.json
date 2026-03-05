@@ -9,7 +9,8 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "@concat('logeshwaran0404/azure-cloud-backup/main/CSVFiles/',item().name)"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
