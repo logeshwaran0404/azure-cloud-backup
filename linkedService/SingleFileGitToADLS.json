@@ -1,0 +1,12 @@
+{
+	"name": "SingleFileGitToADLS",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.github.com/repos/logeshwaran0404/azure-cloud-backup/contents/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
