@@ -1,0 +1,10 @@
+{
+	"name": "SingleFIleGitToADL_Storage",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://gitbackup.dfs.core.windows.net/"
+		}
+	}
+}
