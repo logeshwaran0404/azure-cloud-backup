@@ -1,0 +1,22 @@
+{
+	"name": "GitHub_HTTP_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GetMultiFilestoADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "@replace(item().download_url,'https://raw.githubusercontent.com','')"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
