@@ -2,14 +2,15 @@
 	"name": "Json1",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "GitHubRawLS",
+			"referenceName": "source_github",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": "repos/logeshwaran0404/azure-cloud-backup/contents/CSVFiles"
 			}
 		},
 		"schema": {}
