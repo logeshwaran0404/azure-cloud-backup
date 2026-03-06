@@ -33,7 +33,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('GetGitHubFiles').output",
+						"value": "@activity('GetGitHubFiles').output.response",
 						"type": "Expression"
 					},
 					"activities": [

@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "/logeshwaran0404/azure-cloud-backup/main/@{item().path}"
+				"relativeUrl": "@item().download_url"
 			}
 		},
 		"schema": {}
