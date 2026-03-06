@@ -16,17 +16,17 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "JsonSource",
 						"storeSettings": {
 							"type": "HttpReadSettings",
 							"requestMethod": "GET"
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "JsonReadSettings"
 						}
 					},
 					"dataset": {
-						"referenceName": "source_gitfileDS",
+						"referenceName": "Json1",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -96,13 +96,13 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "sourceGithubRAWDS",
+									"referenceName": "SOURCE_GITHUBFILESDS",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "blobdataset",
+									"referenceName": "Target_gitfilesDS",
 									"type": "DatasetReference"
 								}
 							]

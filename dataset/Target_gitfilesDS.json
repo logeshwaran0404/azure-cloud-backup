@@ -1,9 +1,22 @@
 {
 	"name": "Target_gitfilesDS",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TArget_BlobStorageConnection",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@item().name",
+					"type": "Expression"
+				},
+				"folderPath": "csv-files",
+				"container": "gitfiles"
+			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,

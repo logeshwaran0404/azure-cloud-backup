@@ -1,0 +1,25 @@
+{
+	"name": "SOURCE_GITHUBFILESDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "GitHubRawLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@concat('logeshwaran0404/azure-cloud-backup/main/CSVFiles/',item().name)",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
